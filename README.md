@@ -1,5 +1,5 @@
 # Bootstrap Notification 
-Lightweight <b>(8kb)</b> Notification for Bootstrap.
+Lightweight <b>(8kb)</b> and Animated Notification for Bootstrap.
 
 <img src='https://raw.githubusercontent.com/eg/Bootstrap-Notification/master/img/preview.jpg' alt='bootstrap notification' style='width:690px; height: 367px;'>
 
