@@ -10,57 +10,81 @@
   top: 16px;
   transition: 0.5s all;
   opacity: 0;
-  transform: translate(120%, 0); }
-  .bootstrap-notification .notification-img-wrapper {
-    width: 54px;
-    height: 54px;
-    position: absolute;
-    left: 16px;
-    top: 16px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-right: 16px; }
-    .bootstrap-notification .notification-img-wrapper img {
-      width: auto;
-      height: 54px; }
-  .bootstrap-notification .in {
-    padding: 0 36px 0 70px; }
-    .bootstrap-notification .in .notification-title {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1.3em;
-      display: flex;
-      margin: 3px 0 4px 0; }
-      .bootstrap-notification .in .notification-title b {
-        font-weight: 600;
-        margin-right: 10px; }
-      .bootstrap-notification .in .notification-title span {
-        font-size: 12px;
-        font-weight: 400;
-        opacity: .4; }
-    .bootstrap-notification .in .notification-text {
-      font-size: 14px;
-      opacity: 0.7; }
-  .bootstrap-notification .notification-close {
-    width: 20px;
-    height: 20px;
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='13px' viewBox='0 0 13 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Artboard' transform='translate(-476.000000, -285.000000)' stroke='%23000000' stroke-width='1.6'%3E%3Cg id='close-outline' transform='translate(477.000000, 286.000000)'%3E%3Cpath d='M5.5,5.5 L11,11 L5.5,5.5 L11,0 L5.5,5.5 Z M5.5,5.5 L0,0 L5.5,5.5 L0,11 L5.5,5.5 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: transparent;
-    position: absolute;
-    right: 14px;
-    top: 12px;
-    opacity: 0.35;
-    transition: 0.3s all; }
-    .bootstrap-notification .notification-close:hover, .bootstrap-notification .notification-close:active {
-      opacity: 1; }
-  .bootstrap-notification.show {
-    transform: translate(0, 0);
-    opacity: 1; }
+  transform: translate(120%, 0);
+}
+
+.bootstrap-notification .notification-img-wrapper {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.bootstrap-notification .notification-img-wrapper img {
+  width: auto;
+  height: 54px;
+}
+
+.bootstrap-notification .in {
+  padding: 0 36px 0 70px;
+}
+
+.bootstrap-notification .in .notification-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3em;
+  display: flex;
+  margin: 3px 0 4px 0;
+}
+
+.bootstrap-notification .in .notification-title b {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.bootstrap-notification .in .notification-title span {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: .4;
+}
+
+.bootstrap-notification .in .notification-text {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.bootstrap-notification .notification-close {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='13px' viewBox='0 0 13 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Artboard' transform='translate(-476.000000, -285.000000)' stroke='%23000000' stroke-width='1.6'%3E%3Cg id='close-outline' transform='translate(477.000000, 286.000000)'%3E%3Cpath d='M5.5,5.5 L11,11 L5.5,5.5 L11,0 L5.5,5.5 Z M5.5,5.5 L0,0 L5.5,5.5 L0,11 L5.5,5.5 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  opacity: 0.35;
+  transition: 0.3s all;
+}
+
+.bootstrap-notification .notification-close:hover, .bootstrap-notification .notification-close:active {
+  opacity: 1;
+}
+
+.bootstrap-notification.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 
 .bootstrap-notification.bg-primary, .bootstrap-notification.bg-secondary, .bootstrap-notification.bg-success, .bootstrap-notification.bg-danger, .bootstrap-notification.bg-warning, .bootstrap-notification.bg-info, .bootstrap-notification.bg-dark {
   color: #fff;
-  border-color: transparent; }
-  .bootstrap-notification.bg-primary .notification-close, .bootstrap-notification.bg-secondary .notification-close, .bootstrap-notification.bg-success .notification-close, .bootstrap-notification.bg-danger .notification-close, .bootstrap-notification.bg-warning .notification-close, .bootstrap-notification.bg-info .notification-close, .bootstrap-notification.bg-dark .notification-close {
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='13px' viewBox='0 0 13 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Artboard' transform='translate(-476.000000, -285.000000)' stroke='%23FFFFFF' stroke-width='1.6'%3E%3Cg id='close-outline' transform='translate(477.000000, 286.000000)'%3E%3Cpath d='M5.5,5.5 L11,11 L5.5,5.5 L11,0 L5.5,5.5 Z M5.5,5.5 L0,0 L5.5,5.5 L0,11 L5.5,5.5 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  border-color: transparent;
+}
+
+.bootstrap-notification.bg-primary .notification-close, .bootstrap-notification.bg-secondary .notification-close, .bootstrap-notification.bg-success .notification-close, .bootstrap-notification.bg-danger .notification-close, .bootstrap-notification.bg-warning .notification-close, .bootstrap-notification.bg-info .notification-close, .bootstrap-notification.bg-dark .notification-close {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='13px' viewBox='0 0 13 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Artboard' transform='translate(-476.000000, -285.000000)' stroke='%23FFFFFF' stroke-width='1.6'%3E%3Cg id='close-outline' transform='translate(477.000000, 286.000000)'%3E%3Cpath d='M5.5,5.5 L11,11 L5.5,5.5 L11,0 L5.5,5.5 Z M5.5,5.5 L0,0 L5.5,5.5 L0,11 L5.5,5.5 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
